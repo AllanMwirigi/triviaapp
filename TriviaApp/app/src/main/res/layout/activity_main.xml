@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+    </Spinner>
+
+    <!--<TextView-->
+        <!--android:layout_below="@+id/spinner"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Team Name"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:textSize="30sp"/>-->
+
+
+
+    <TextView
+        android:id="@+id/tv_teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+    <!--TODO set visibility to be visible when clicked-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_buzz"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@+id/tv_teamName"-->
+        <!--android:layout_marginStart="38dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_marginEnd="38dp"-->
+        <!--android:layout_marginBottom="80dp"-->
+        <!--android:background="@drawable/button_background"-->
+        <!--android:text="@string/press_me"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="25sp" />-->
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_teamName"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/triviabuzzer"
+        android:id="@+id/img_buzzer"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Not Connected"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/tv_connStat"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:id="@+id/btn_connect"/>
+
+</RelativeLayout>

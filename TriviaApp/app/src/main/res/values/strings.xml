@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TriviaApp</string>
+    <string name="press_me">Press Me</string>
+    
+    <string-array name="group_array">
+        <item>Select Team</item>
+    </string-array>
+</resources>
